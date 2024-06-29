@@ -89,6 +89,18 @@
                 }
             },
             {
+                "scope": "punctuation.definition.string.begin",
+                "settings": {
+                    "foreground": "#007106",
+                }
+            },
+            {
+                "scope": "punctuation.definition.string.end",
+                "settings": {
+                    "foreground": "#007106",
+                }
+            },
+            {
                 "scope": "storage.type",
                 "settings": {
                     "foreground": "#570092",
