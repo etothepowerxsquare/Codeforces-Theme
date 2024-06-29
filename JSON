@@ -70,6 +70,13 @@
                 }
             },
             {
+                "scope": "string.quoted.double",
+                "settings": {
+                    "foreground": "#007106",
+                    "fontStyle": "bold"
+                }
+            },
+            {
                 "scope": "string",
                 "settings": {
                     "foreground": "#000000",
