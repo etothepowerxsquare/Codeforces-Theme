@@ -1,0 +1,140 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.background": "#e9e9e9",
+    },
+    "editor.formatOnSave": true,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.fontFamily": "Consolas New, monospace",
+    "editor.fontWeight": "normal",
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "macro": {
+                "foreground": "#000000",
+                "fontStyle": ""
+            },
+            "templateType": {
+                "foreground": "#570092",
+                "fontStyle": "bold"
+            },
+            "type": {
+                "foreground": "#000000",
+                "fontStyle": ""
+            },
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "foreground": "#9e0000",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#000000",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.name.function",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "entity.name.type",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "keyword.control",
+                "settings": {
+                    "foreground": "#003a7d",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "keyword.control.directive",
+                "settings": {
+                    "foreground": "#9e0000",
+                }
+            },
+            {
+                "scope": "string",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "punctuation.definition.string",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "storage.type",
+                "settings": {
+                    "foreground": "#570092",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.name.function.preprocessor",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "constant.character.escape",
+                "settings": {
+                    "foreground": "#007106",
+                    "fontStyle": "bold",
+                }
+            },
+            {
+                "scope": "keyword.other.using",
+                "settings": {
+                    "foreground": "#003a7d",
+                    "fontStyle": "bold",
+                }
+            },
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "meta.preprocessor",
+                "settings": {
+                    "foreground": "#000000",
+                }
+            },
+            {
+                "scope": "punctuation.definition.comment",
+                "settings": {
+                    "foreground": "#9e0000",
+                }
+            },
+            {
+                "scope": "constant.language",
+                "settings": {
+                    "foreground": "#003a7d",
+                    "fontStyle": "bold"
+                }
+            },
+        ],
+    },
+    "window.zoomLevel": 2.5,
+    "workbench.colorTheme": "Visual Studio Light - C++",
+}
