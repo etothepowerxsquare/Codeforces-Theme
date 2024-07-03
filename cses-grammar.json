@@ -118,6 +118,10 @@
                 {
                     "match": "<([^\\s,<>]+)>",
                     "name": "keyword.custom.angularBracketedWord"
+                },
+                {
+                    "name": "keyword.custom.bool",
+                    "match": "\\b(false|true|NULL|nullptr)\\b"
                 }
             ]
         },
