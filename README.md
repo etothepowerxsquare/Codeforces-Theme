@@ -1,0 +1,2 @@
+->Still have to update cf-color-theme file with editor settings
+-> Push the color theme file and the package.json
