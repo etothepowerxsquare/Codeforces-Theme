@@ -1,0 +1,153 @@
+{
+    "scopeName": "source.custom-grammar.cpp",
+    "name": "Custom C++",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#types"
+        },
+        {
+            "include": "#functions"
+        },
+        {
+            "include": "#directives"
+        },
+        {
+            "include": "#using_namespace"
+        },
+        {
+            "include": "#io"
+        },
+        {
+            "include": "#digits"
+        },
+        {
+            "include": "#stl"
+        }
+    ],
+    "repository": {
+        "stl": {
+            "patterns": [
+                {
+                    "name": "storage.type.stl",
+                    "match": "\\b(?:vector|list|deque|array|forward_list|set|multiset|map|multimap|unordered_set|unordered_multiset|unordered_map|unordered_multimap|stack|queue|priority_queue)\\b"
+                }
+            ]
+        },
+        "digits": {
+            "patterns": [
+                {
+                    "name": "entity.name.digit.cpp",
+                    "match": "\\b\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?\\b"
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.cpp",
+                    "match": "//.*$"
+                },
+                {
+                    "name": "comment.block.cpp",
+                    "begin": "/\\*",
+                    "end": "\\*/"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.cpp",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.cpp",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.cpp",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.cpp",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.cpp",
+                    "match": "\\b(if|else|for|while|switch|case|default|break|continue|return)\\b"
+                },
+                {
+                    "name": "keyword.operator.cpp",
+                    "match": "\\b(and|or|not|xor|bitand|bitor|compl|and_eq|or_eq|xor_eq|not_eq)\\b"
+                },
+                {
+                    "name": "keyword.other.cpp",
+                    "match": "\\b(const|static|volatile|inline|extern|namespace|using|typedef|friend|virtual|public|private|protected|class|struct|union|enum|template|typename|decltype)\\b"
+                }
+            ]
+        },
+        "types": {
+            "patterns": [
+                {
+                    "name": "storage.type.primitive.cpp",
+                    "match": "\\b(void|bool|char|short|long|long long|float|double|signed|unsigned)\\b"
+                },
+                {
+                    "name": "storage.type.primitive.int.cpp",
+                    "match": "\\bint\\b"
+                },
+                {
+                    "match": "<([^\\s,<>]+)>",
+                    "name": "keyword.custom.angularBracketedWord"
+                }
+            ]
+        },
+        "functions": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.cpp",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=\\()"
+                }
+            ]
+        },
+        "directives": {
+            "patterns": [
+                {
+                    "name": "keyword.control.directive.cpp",
+                    "match": "^\\s*#\\s*(include|define|undef|if|ifdef|ifndef|else|elif|endif|error|pragma)\\b"
+                }
+            ]
+        },
+        "io": {
+            "patterns": [
+                {
+                    "name": "keyword.control.io.cpp",
+                    "match": "\\b(cin|cout|printf|scanf)"
+                }
+            ]
+        }
+    },
+    "fileTypes": [
+        "cpp",
+        "h"
+    ]
+}
